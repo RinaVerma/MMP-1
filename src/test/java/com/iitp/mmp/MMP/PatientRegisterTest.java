@@ -10,12 +10,11 @@ import java.util.concurrent.TimeUnit;
 import org.iitp.mmp.patient.pages.RegisterPatientPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PatientRegisterTest {
+	////checking now
+	
 	@Test(description="US_004 Validating the approve patient")
 	public void approvePatient() throws InterruptedException
 	{

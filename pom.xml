@@ -9,7 +9,12 @@
 
   <name>MMP</name>
   <url>http://maven.apache.org</url>
-
+  <profiles>
+  <profile>
+  <id>Smoke</id>
+  </profile>
+  </profiles>
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

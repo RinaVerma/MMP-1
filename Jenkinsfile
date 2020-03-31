@@ -6,8 +6,8 @@ pipeline {
         echo 'Execute Tests'
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         echo "Jenkins Workspace ${env.WORKSPACE}"
-        sh "mvn MMP clean"
-        sh "mvn MMP test "
+         "mvn MMP clean"
+         "mvn MMP test "
       }
     } 
   }

@@ -1,12 +1,16 @@
-pipeline {
-  agent any
- 
-  stages {
-    stage('Execute Selenium Tests from Github Repo Using Jenkins 2.0 Pipeline') {
-      steps {
-        echo 'Execute Tests'
-        
-      }
-    } 
-  }
+pipeline { 
+    agent any  
+    tools {
+        maven 'maven'
+    }
+    stages { 
+        stage('Build') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
+               sh 'mvn --version'
+               sh 'mvn clean'
+               sh 'mvn test'
+            }
+        }
+    }
 }

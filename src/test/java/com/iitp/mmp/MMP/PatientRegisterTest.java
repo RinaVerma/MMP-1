@@ -20,7 +20,7 @@ public class PatientRegisterTest {
 	{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/registration.php");
+		driver.get("http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/portal/registration.php");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		RegisterPatientPage regPage = new RegisterPatientPage(driver);
 		Random rnd = new Random();
@@ -29,7 +29,7 @@ public class PatientRegisterTest {
 		
 		HashMap<String,String> hMap = regPage.putFirstNameTxt();
 		 hMap = regPage.putLastNameTxt();
-		hMap=regPage.putDOBTxt();
+		//hMap=regPage.putDOBTxt();
 		
 		hMap=regPage.putSSN();
 		hMap=regPage.putState();

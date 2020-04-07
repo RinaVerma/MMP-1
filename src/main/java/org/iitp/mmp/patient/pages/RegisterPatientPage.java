@@ -1,7 +1,5 @@
 package org.iitp.mmp.patient.pages;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -38,13 +36,13 @@ public class RegisterPatientPage {
 		hMap.put("lastname", lastNameTxtField.getAttribute("value"));
 		return hMap;
 	}
-	public HashMap <String,String> putDOBTxt() {
+	/*public HashMap <String,String> putDOBTxt() {
 		WebElement dobTxtField= driver.findElement(By.id("datepicker"));
 		SimpleDateFormat sdf= new SimpleDateFormat("MM/dd/yyyy");
 		dobTxtField.sendKeys(sdf.format(new Date()));
 		hMap.put("dob",dobTxtField.getAttribute("value"));
 		return hMap;
-	}
+	}*/
 	public HashMap <String,String> putLicense() {
 		WebElement licenseTxtField= driver.findElement(By.id("license"));
 		licenseTxtField.sendKeys(""+(10000000+rnd.nextInt(90000000)));
@@ -60,7 +58,7 @@ public class RegisterPatientPage {
 	}
 	public HashMap <String,String> putState() {
 		WebElement stateTxtField= driver.findElement(By.id("state"));
-		stateTxtField.sendKeys("New York");	
+		stateTxtField.sendKeys("Georgia");	
 		hMap.put("state", stateTxtField.getAttribute("value"));
 		return hMap;	
 	}

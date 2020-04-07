@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.iitp.mmp.MMP.LoginPageTest">
+      <class name="com.iitp.mmp.MMP.AdminHomeTest">
         <methods>
-          <include name="PatLogin"/>
+          <include name="adminAddReportsTest"/>
         </methods>
-      </class> <!-- com.iitp.mmp.MMP.LoginPageTest -->
+      </class> <!-- com.iitp.mmp.MMP.AdminHomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

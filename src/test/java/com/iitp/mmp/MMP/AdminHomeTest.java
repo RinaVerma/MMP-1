@@ -6,7 +6,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 
-import org.iitp.mmp.patient.pages.AdminHomePage;
+import org.iitp.mmp.admin.pages.AdminHomePage;
 import org.iitp.mmp.patient.resources.base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package org.iitp.mmp.patient.pages;
+package org.iitp.mmp.admin.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

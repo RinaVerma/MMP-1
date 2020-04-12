@@ -15,7 +15,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.iitp.mmp.patient.pages.AdminLoginPage;
+import org.iitp.mmp.admin.pages.AdminLoginPage;
 import org.iitp.mmp.patient.pages.HomePage;
 import org.iitp.mmp.patient.pages.PatientHomePage;
 import org.iitp.mmp.patient.pages.PatientLoginPage;

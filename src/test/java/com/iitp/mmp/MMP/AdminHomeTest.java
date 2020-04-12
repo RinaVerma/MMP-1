@@ -41,6 +41,7 @@ public class AdminHomeTest {
     adminHmPg.getDescTxt().sendKeys(patientName+" XRay Report");
     Thread.sleep(500);	
 	adminHmPg.getSubmitBtn().click();
+	System.out.println("abc");
 	
 	
 	

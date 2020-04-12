@@ -5,7 +5,8 @@
     <classes>
       <class name="com.iitp.mmp.MMP.LoginPageTest">
         <methods>
-          <include name="PatLogin"/>
+          <include name="tearDown"/>
+          <include name="PatLoginDataProvider"/>
         </methods>
       </class> <!-- com.iitp.mmp.MMP.LoginPageTest -->
     </classes>

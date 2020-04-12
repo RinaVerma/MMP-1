@@ -8,9 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 public class AdminHomePage {
 	private  final WebDriver driver;
 	
-	 public AdminHomePage(WebDriver driver)
+	 public AdminHomePage(WebDriver driver)//constructor to give life to driver
 		{
-			this.driver = driver;
+			this.driver = driver;//the driver created in this class is assigned the driver from initializeDriver
 
 	     }
 	 

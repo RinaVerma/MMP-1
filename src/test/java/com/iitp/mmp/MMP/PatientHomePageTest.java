@@ -1,21 +1,24 @@
 package com.iitp.mmp.MMP;
 
 import org.testng.annotations.Test;
+
+import java.io.IOException;
+
 import org.iitp.mmp.patient.pages.HomePage;
 import org.iitp.mmp.patient.pages.PatientHomePage;
 import org.iitp.mmp.patient.pages.PatientLoginPage;
 import org.iitp.mmp.patient.pages.PatientProfilePage;
+import org.iitp.mmp.patient.resources.base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class PatientHomePageTest {
+public class PatientHomePageTest extends base{
 	
 	@Test
-	public void viewReportTest() {
+	public void viewReportTest() throws IOException {
 		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		driver=initializeDriver();
 		driver.get("http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000");
 		patientLogin(driver) ;
 		

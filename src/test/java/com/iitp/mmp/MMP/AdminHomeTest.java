@@ -4,20 +4,24 @@ import org.testng.annotations.Test;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
+
 import org.iitp.mmp.patient.pages.AdminHomePage;
+import org.iitp.mmp.patient.resources.base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-/**
-Sudheer changes
-**/
-public class AdminHomeTest {
+
+      
+public class AdminHomeTest extends base{
+	
+	
+
 	@Test
-	public void adminAddReportsTest() throws InterruptedException, AWTException {
-	WebDriverManager.chromedriver().setup();
-	WebDriver driver = new ChromeDriver();
+	public void adminAddReportsTest() throws InterruptedException, AWTException, IOException {
+	driver=initializeDriver();
 	driver.get("http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/admin");
 	//driver.manage().window().fullscreen();
 	AdminHomePage adminHmPg= new AdminHomePage(driver);
@@ -43,6 +47,7 @@ public class AdminHomeTest {
     adminHmPg.getDescTxt().sendKeys(patientName+" XRay Report");
     Thread.sleep(500);	
 	adminHmPg.getSubmitBtn().click();
+	System.out.println("abc");
 	
 	
 	

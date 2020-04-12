@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-07T00:31:53Z" name="Default suite" finished-at="2020-04-07T00:32:14Z" duration-ms="20215">
+  <suite started-at="2020-04-12T21:14:41Z" name="Default suite" finished-at="2020-04-12T21:15:23Z" duration-ms="42285">
     <groups>
     </groups>
-    <test started-at="2020-04-07T00:31:53Z" name="Default test" finished-at="2020-04-07T00:32:14Z" duration-ms="20215">
-      <class name="com.iitp.mmp.MMP.PatientHomePageTest">
-        <test-method signature="viewReportTest()[pri:0, instance:com.iitp.mmp.MMP.PatientHomePageTest@275710fc]" started-at="2020-04-07T00:31:53Z" name="viewReportTest" finished-at="2020-04-07T00:32:14Z" duration-ms="20179" status="PASS">
+    <test started-at="2020-04-12T21:14:41Z" name="Default test" finished-at="2020-04-12T21:15:23Z" duration-ms="42285">
+      <class name="com.iitp.mmp.MMP.LoginPageTest">
+        <test-method signature="PatLoginDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.iitp.mmp.MMP.LoginPageTest@5b0abc94]" started-at="2020-04-12T21:14:41Z" name="PatLoginDataProvider" data-provider="getData" finished-at="2020-04-12T21:15:01Z" duration-ms="20070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ria1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ria12345]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewReportTest -->
-      </class> <!-- com.iitp.mmp.MMP.PatientHomePageTest -->
+        </test-method> <!-- PatLoginDataProvider -->
+        <test-method signature="PatLoginDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.iitp.mmp.MMP.LoginPageTest@5b0abc94]" started-at="2020-04-12T21:15:01Z" name="PatLoginDataProvider" data-provider="getData" finished-at="2020-04-12T21:15:20Z" duration-ms="18267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testunB43]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testpdT148]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatLoginDataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iitp.mmp.MMP.LoginPageTest@5b0abc94]" started-at="2020-04-12T21:15:20Z" name="tearDown" finished-at="2020-04-12T21:15:23Z" duration-ms="3871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.iitp.mmp.MMP.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

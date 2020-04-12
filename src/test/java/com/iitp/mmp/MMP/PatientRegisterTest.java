@@ -2,24 +2,26 @@ package com.iitp.mmp.MMP;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.iitp.mmp.patient.pages.RegisterPatientPage;
+import org.iitp.mmp.patient.resources.base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class PatientRegisterTest {
+public class PatientRegisterTest extends base{
 	////checking now
 	
 	@Test(description="US_004 Validating the approve patient")
-	public void approvePatient() throws InterruptedException
+	public void approvePatient() throws InterruptedException, IOException
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		driver=initializeDriver();
 		driver.get("http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/portal/registration.php");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		RegisterPatientPage regPage = new RegisterPatientPage(driver);
